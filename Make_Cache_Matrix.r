@@ -22,5 +22,6 @@ cacheSolve <- function(x, ...) { ### takes an object of class makeCacheMatrix (l
   data <- x$get() ## Data is now the matrix in the cache
   s <- solve(data, ...) ## inverse of the matrix is calculated...
   x$setinverse(s) ...## and written in the cache
+  x$setinverse(s) ##... and written in the cache
   s
 }
